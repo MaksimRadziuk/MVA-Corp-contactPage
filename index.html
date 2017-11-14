@@ -39,7 +39,7 @@
                     <div class="phones">
                         <a href="tel:+788009999999">8 (800) 999 99 99</a>
                         <a href="tel:+783833333333">8 (383) 333 33 33</a>
-                        <a href="#" class="call-order"></a>
+                        <a href="#" class="call-order" onClick="getElementById('win1').removeAttribute('style');" title="Заказать обратный звонок"></a>
                     </div>
 
                     <div class="languages">
@@ -59,7 +59,7 @@
                         <p><span>в skype:</span><span>с 09:00 до 18:00</span></p>
                 </div>
                 <div class="yell2">
-                    <p>Заказы принимаются через онлайн-прототипирование</p>
+                    <p>Заказы принимаются через форму "заказать"</p>
                     <span></span>
                 </div>
                 <p class="big">контакты</p>
@@ -75,7 +75,7 @@
                         <form action="#">
                             <div class="inputText">
                                 <input type="text" placeholder="имя">
-                                <input type="email" placeholder="email">
+                                <input type="email" placeholder="email@example.com">
                                 <input type="text" placeholder="skype">
                             </div>
                             <textarea name="" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
@@ -150,57 +150,84 @@
         <li><a href="#">Контакты</a></li>
     </ul>
 </div>
+
 <!-- ОКНО ЗАКАЗА -->
-<div id="win" style="display: none;">
-   <div class="overlay"></div>
-      <div class="visible">
-        <div class="red-block"></div>
-        <button type="button" onClick="getElementById('win').style.display='none';" class="close-window"><img src="template/img/close-button.png" alt="close-window"></button>
-        <h2>дизайн чего хотите заказать?</h2>
-        <span id="win-desc">на каждую услугу заполняется отдельная форма</span>
-          <form action="#" name="popup">
-              <div class="popup-select-style">
-                  <select name="popup-select" id="popup-select">
-                      <option value="Лендинг">Лендинг</option>
-                      <option value="Сайт">Сайт</option>
-                      <option value="API">Мобильное приложение</option>
-                      <option value="Продукт">Десктопное ПО</option>
-                      <option value="Продукт">SaaS</option>
-                      <option value="Продукт">Презентация</option>
-                      <option value="Продукт">Инфографика</option>
-                      <option value="Продукт">Соцсети</option>
-                      <option value="Продукт">Баннера</option>
-                  </select>
-              </div>
-              <span id="win-add">дополнительно нужно:</span>
-              <div class="win-add-input">
-                <input type="checkbox" class="win-add-checkbox" id="layout">
-                <label for="layout"><span></span>Верстка</label>
-              </div>
-              <div class="win-add-input">
-                <input type="checkbox" class="win-add-checkbox" id="programming">
-                <label for="programming"><span></span>Программирование</label>
-              </div>
-              <div class="win-add-input">
-                  <input type="checkbox" class="win-add-checkbox" id="int-mark">
-                  <label for="int-mark"><span></span>Интернет-маркетинг</label>
-              </div>
-              <div class="win-add-input">
-                  <input type="phone" class="phone-input" placeholder="Номер телефона">
-              </div>
-              <div class="win-add-input">
-                  <input type="email" class="email-input" placeholder="Email">
-              </div>
-              <div class="win-add-input">
-                  <input type="checkbox" class="win-add-checkbox" id="confirm-policy">
-                  <label for="confirm-policy" class="policyForm-label"><span></span>Я принимаю <a href="#" class="policyForm-text">пользовательское соглашение</a> и <a href="#" class="policyForm-text">политику конфиденциальности</a></label>
-              </div>
-              <input type="submit" id="submit-button-form" value="заказать услугу">
-          </form>
-        
-    </div>
-</div>
+  <div id="win" style="display: none;">
+     <div class="overlay"></div>
+        <div class="visible">
+          <div class="red-block"></div>
+          <button type="button" onClick="getElementById('win').style.display='none';" class="close-window"><img src="template/img/close-button.png" alt="close-window"></button>
+          <h2>дизайн чего хотите заказать?</h2>
+          <span id="win-desc">на каждую услугу заполняется отдельная форма</span>
+            <form action="#" name="popup">
+                <div class="popup-select-style">
+                    <select name="popup-select" id="popup-select">
+                        <option value="Лендинг">Лендинг</option>
+                        <option value="Сайт">Сайт</option>
+                        <option value="API">Мобильное приложение</option>
+                        <option value="Продукт">Десктопное ПО</option>
+                        <option value="Продукт">SaaS</option>
+                        <option value="Продукт">Презентация</option>
+                        <option value="Продукт">Инфографика</option>
+                        <option value="Продукт">Соцсети</option>
+                        <option value="Продукт">Баннера</option>
+                    </select>
+                </div>
+                <span id="win-add">дополнительно нужно:</span>
+                <div class="win-add-input">
+                  <input type="checkbox" class="win-add-checkbox" id="layout">
+                  <label for="layout"><span></span>Верстка</label>
+                </div>
+                <div class="win-add-input">
+                  <input type="checkbox" class="win-add-checkbox" id="programming">
+                  <label for="programming"><span></span>Программирование</label>
+                </div>
+                <div class="win-add-input">
+                    <input type="checkbox" class="win-add-checkbox" id="int-mark">
+                    <label for="int-mark"><span></span>Интернет-маркетинг</label>
+                </div>
+                <div class="win-add-input">
+                    <input type="tel" class="phone-input" id="phone" placeholder="Номер телефона">
+                </div>
+                <div class="win-add-input">
+                    <input type="email" class="email-input" placeholder="email@example.com">
+                </div>
+                <div class="win-add-input">
+                    <input type="checkbox" class="win-add-checkbox" id="confirm-policy">
+                    <label for="confirm-policy" class="policyForm-label"><span></span>Я принимаю <a href="#" class="policyForm-text">пользовательское соглашение</a> и <a href="#" class="policyForm-text">политику конфиденциальности</a></label>
+                </div>
+                <input type="submit" id="submit-button-form" value="заказать услугу">
+            </form>
+          
+      </div>
+  </div>
 <!-- END ОКНО ЗАКАЗА -->
+
+<!-- ОБРАТНЫЙ ЗВОНОК -->
+  <div id="win1" style="display: none;">
+     <div class="overlay"></div>
+        <div class="visible">
+          <div class="red-block"></div>
+          <button type="button" onClick="getElementById('win1').style.display='none';" class="close-window"><img src="template/img/close-button.png" alt="close-window"></button>
+          <h2>Закажите обратный звонок. Мы перезвоним вам в самое ближайшее время!</h2>
+            <form action="#" name="popup">
+                <div class="win-add-input">
+                    <input type="text" class="phone-input" placeholder="Имя">
+                </div>
+                <div class="win-add-input">
+                    <input type="tel" class="email-input" placeholder="Номер телефона" id="phone1">
+                </div>
+                <div class="win-add-input">
+                    <input type="checkbox" class="win-add-checkbox" id="confirm-policy1">
+                    <label for="confirm-policy1" class="policyForm-label"><span></span>Я принимаю <a href="#" class="policyForm-text">пользовательское соглашение</a> и <a href="#" class="policyForm-text">политику конфиденциальности</a></label>
+                </div>
+                <input type="submit" id="submit-button-form" value="заказать услугу">
+            </form>
+          
+      </div>
+  </div>
+<!-- END ОБРАТНЫЙ ЗВОНОК -->
+
 
 <!-- PRELOADER -->
     <div id="page-preloader">
