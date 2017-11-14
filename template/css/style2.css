@@ -821,7 +821,7 @@ section.contacts {
     .schedule {
         padding: 20px;
         width: 90%;
-        top:calc(65vh - 220px);
+        top:calc(65vh - 180px);
     }
     .schedule p {
         font-size: 14px;
