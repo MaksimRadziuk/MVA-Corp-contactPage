@@ -116,6 +116,8 @@ $("document").ready(function(){
     }
   }
 });
+
+
   //разрешения менее 500px
 $("document").ready(function(){
   if(window.innerWidth < 500){
