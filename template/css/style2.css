@@ -7,12 +7,14 @@ section.contacts {
     width: 100%;
     background-color: #6e767f;
     box-sizing: border-box;
+
 }
 .top-part {
     display: block;
     width: 100%;
     height: calc(50vh - 40px);
     position: relative;
+    overflow:hidden;
 }
 .bottom-part {
     background-color: #fff;
@@ -577,7 +579,7 @@ section.contacts {
         height: 540px;
     }
     .yell2 {
-        top: 85px;
+        top: 110px;
     }
     .yell2 p {
         width: 535px;
