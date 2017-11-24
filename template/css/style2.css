@@ -274,7 +274,7 @@ section.contacts {
     border:1px solid #fab2b8;
     width: 25%;
     height: 35px;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: transparent;
     color: #fff;
     text-transform: uppercase;
@@ -283,22 +283,22 @@ section.contacts {
 }
 .inputText input::-webkit-input-placeholder {
     color:#fab2b8;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
 }
 .inputText input::-moz-placeholder          {
     color:#fab2b8;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     }/* Firefox 19+ */
 .inputText input:-moz-placeholder           {
     color:#fab2b8;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     }/* Firefox 18- */
 .inputText input:-ms-input-placeholder      {
     color:#fab2b8;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
 }
 .redForm textarea {
@@ -421,6 +421,33 @@ section.contacts {
     z-index: 3;
 }
 
+@media all and (max-width: 1920px) and (max-height: 1000px) {
+    .schedule {
+        height: 300px;
+        top: calc(50vh - 300px);
+    }
+}
+@media all and (max-width: 1920px) and (max-height: 780px) {
+    .schedule {
+        height: 250px;
+        top: calc(50vh - 250px);
+    }
+    .schedule p {
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 1920px) and (max-height: 670px) {
+    .schedule {
+        height: 200px;
+        top: calc(50vh - 200px);
+        padding-top: 20px;
+    }
+    .schedule p {
+        margin-bottom: 15px;
+    }
+}
+
 @media all and (max-width: 1716px) {
     .yell2 span:after {
         width: 80px;
@@ -461,10 +488,11 @@ section.contacts {
     .schedule {
         height: 300px;
         top: calc(50vh - 300px);
+        left: 21%;
     }
-}
-
-@media all and (max-width: 1366px) {
+    .redForm {
+        margin-left: 21%;
+    }
     .yell2 {
         top: 120px;
     }
@@ -485,6 +513,31 @@ section.contacts {
     .big-skype-holder p {
         font-size: 26px;
     }
+}
+
+@media all and (max-width: 1440px) and (max-height: 780px) {
+    .schedule {
+        height: 250px;
+        top: calc(50vh - 250px);
+    }
+    .schedule p {
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 1440px) and (max-height: 670px) {
+    .schedule {
+        height: 200px;
+        top: calc(50vh - 200px);
+        padding-top: 20px;
+    }
+    .schedule p {
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 1400px) {
+
     .schedule {
         left: 22%;
         width: 725px;
@@ -513,6 +566,13 @@ section.contacts {
         width: 155px;
     }
 
+}
+
+@media all and (max-width:1366px) and (max-height: 590px) {
+    .schedule {
+        height: 150px;
+        top: calc(50vh - 150px);
+    }
 }
 
 @media all and (max-width: 1280px) {
@@ -561,8 +621,48 @@ section.contacts {
     }
 }
 
-@media all and (max-width: 1024px) {
-    .schedule {;
+@media all and (max-width:1280px) and (max-height: 615px) {
+    .schedule {
+        height: 180px;
+        top: calc(50vh - 180px);
+    }
+}
+
+@media all and (max-width:1280px) and (max-height: 540px) {
+    .schedule {
+        height: 130px;
+        top: calc(50vh - 130px);
+    }
+    .schedule p {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .schedule p:first-child {
+        margin-right: 20px;
+    }
+    .schedule p span:nth-child(1) {
+        width: 155px;
+    }
+}
+
+@media all and (max-width: 1240px) {
+    .yell2 {
+        top: 110px;
+    }
+    .yell2 p {
+        width: 535px;
+    }
+    .yell2 span {
+        height: 10px;
+    }
+    .yell2 span:after {
+        height: 10px;
+    }
+}
+
+@media all and (max-width: 1170px) {
+    .schedule {
         left: 320px;
         height: 180px;
         top: calc(50vh - 180px);
@@ -578,18 +678,21 @@ section.contacts {
         width: calc(100% - 320px);
         height: 540px;
     }
-    .yell2 {
-        top: 110px;
+    .redForm.show .arrowDown {
+        bottom: -100px;
     }
-    .yell2 p {
-        width: 535px;
+    .redForm textarea {
+        width: 93%;
     }
-    .yell2 span {
-        height: 10px;
+    .redForm label p {
+        font-size: 10px;
     }
-    .yell2 span:after {
-        height: 10px;
+    .redForm label a {
+        font-size: 10px;
     }
+}
+
+@media all and (max-width: 1024px) {
     .yell3 p, .yell1 p {
         font-size: 12px;
         margin-left: 30px;
@@ -629,21 +732,34 @@ section.contacts {
     .big-skype-holder p {
         font-size: 22px;
     }
-    .redForm.show .arrowDown {
-        bottom: -100px;
+    
+}
+
+@media all and (max-width:1024px) and (max-height: 665px) {
+    .schedule {
+        height: 130px;
+        top: calc(50vh - 130px);
     }
-    .redForm textarea {
-        width: 93%;
+    .schedule p {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 15px;
     }
-    .redForm label p {
-        font-size: 10px;
+    .schedule p:first-child {
+        margin-right: 20px;
     }
-    .redForm label a {
-        font-size: 10px;
+    .schedule p span:nth-child(1) {
+        width: 155px;
     }
 }
 
-@media all and (max-width: 768px) and (max-height: 1024px) {
+@media all and (max-width:1024px) and (max-height: 545px) {
+    .yell2 {
+        top: 75px;
+    }
+}
+
+@media all and (max-width: 930px) {
     .yell2 {
         right: 60px;
     }
@@ -655,7 +771,7 @@ section.contacts {
         right: -60px;
     }
     .yell1 {
-        top: 180px;
+        top: 150px;
     }
     .top-part .big {
         font-size: 100px;
@@ -678,31 +794,6 @@ section.contacts {
     }
     .arrowDown {
         left: calc(50% - 10px);
-    }
-    .contacts .footer .foot-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        bottom: 75px;
-        height: 50px;
-    }
-    .contacts .skype-holder {
-        width: 164px;
-    }
-    .big-skype-holder {
-        top: 300px;
-    }
-    .yell3 {
-        top: calc(25vh - 10px);
-    }
-    .yell3 p {
-        width: 280px;
-    }
-    .yell3 span {
-        height: 10px;
-    }
-    .yell3 span:after {
-        height: 10px;
     }
     .roundArrow {
         left: 83px;
@@ -732,9 +823,63 @@ section.contacts {
     }
 }
 
+@media all and (max-width: 768px) and (max-height: 1024px) {
+    .contacts .footer .foot-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        bottom: 75px;
+        height: 50px;
+    }
+    .contacts .skype-holder {
+        width: 164px;
+    }
+    .big-skype-holder {
+        top: 300px;
+    }
+    .yell3 {
+        top: calc(25vh - 10px);
+    }
+    .yell3 p {
+        width: 280px;
+    }
+    .yell3 span {
+        height: 10px;
+    }
+    .yell3 span:after {
+        height: 10px;
+    } 
+}
+
+@media all and (max-width: 768px) and (max-height: 615px) {
+    .yell2 {
+        top: 75px;
+    }
+    .yell1 {
+        top: 110px;
+    }
+}
+
+@media all and (max-width: 768px) and (max-height: 545px) {
+    .schedule {
+        height: 100px;
+        top: calc(50vh - 100px);
+        padding-top: 10px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .phones {
+        left: 57vw;
+    }
+}
+
 @media all and (max-width: 640px) {
     .yell2 {
         top: 120px;
+    }
+    .yell1 {
+        top: 160px;
     }
     .top-part .big {
         font-size: 92px;
@@ -744,6 +889,23 @@ section.contacts {
     }
     .bottom-part.long {
         padding-bottom: 180px;
+    }
+}
+@media all and (max-width: 640px) and (max-height: 745px) {
+    .schedule {
+        height: 130px;
+        top: calc(50vh - 130px);
+    }
+    .schedule p {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .schedule p:first-child {
+        margin-right: 20px;
+    }
+    .schedule p span:nth-child(1) {
+        width: 155px;
     }
 }
 
@@ -758,7 +920,18 @@ section.contacts {
     .yell2 span:after {
         height: 30px;
     }
+}
 
+@media all and (max-width: 570px) {
+    .redForm.show .arrowDown {
+        bottom: -20px;
+    }
+}
+
+@media all and (max-width: 521px) {
+    .schedule p {
+        font-size: 14px;
+    }
 }
 
 @media all and (max-width: 500px) {
@@ -825,9 +998,7 @@ section.contacts {
         width: 90%;
         top:calc(65vh - 180px);
     }
-    .schedule p {
-        font-size: 14px;
-    }
+    
     .top-part .big {
         font-size: 14.5vw;
         bottom: -10px;
@@ -936,30 +1107,3 @@ section.contacts {
         margin-right: 20px;
     }
 }
-/* @media all and (max-height: 1000px) {
-    .schedule {
-        height: 350px;
-        top: calc(50vh - 350px);
-    }
-}
-@media all and (max-height: 880px) {
-    .schedule {
-        height: 300px;
-        top: calc(50vh - 300px);
-    }
-}
-@media all and (max-height: 768px) {
-    .schedule {
-        height: 250px;
-        top: calc(50vh - 250px);
-    }
-}
-@media all and (max-height: 670px) {
-    .schedule p {
-        margin-bottom: 20px;
-    }
-    .schedule {
-        height: 200px;
-        top: calc(50vh - 200px);
-    }
-} */
