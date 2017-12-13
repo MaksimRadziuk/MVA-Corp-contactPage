@@ -51,6 +51,7 @@ section.contacts {
     left: -10px;
     z-index: 1;
     pointer-events: none;
+    font-family: 'Bicubik', sans-serif;
 }
 .big-skype-holder {
     display: flex;
@@ -751,6 +752,7 @@ section.contacts {
     .schedule p span:nth-child(1) {
         width: 155px;
     }
+
 }
 
 @media all and (max-width:1024px) and (max-height: 545px) {
@@ -881,14 +883,15 @@ section.contacts {
     .yell1 {
         top: 160px;
     }
-    .top-part .big {
-        font-size: 92px;
-    }
     .contacts .footer .foot-text {
         bottom: 110px;
     }
     .bottom-part.long {
         padding-bottom: 180px;
+    }
+    .top-part .big {
+        font-size: 14.5vw;
+        bottom: -20px;
     }
 }
 @media all and (max-width: 640px) and (max-height: 745px) {
